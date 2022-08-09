@@ -3,7 +3,7 @@ package ch.martinelli.demo.vaadin.views;
 
 import ch.martinelli.demo.vaadin.components.appnav.AppNav;
 import ch.martinelli.demo.vaadin.components.appnav.AppNavItem;
-import ch.martinelli.demo.vaadin.views.helloworld.HelloWorldView;
+import ch.martinelli.demo.vaadin.views.treegrid.TreeGridView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
@@ -55,7 +55,7 @@ public class MainLayout extends AppLayout {
         AppNav nav = new AppNav();
         nav.addClassNames("app-nav");
 
-        nav.addItem(new AppNavItem("Hello World", HelloWorldView.class, "la la-globe"));
+        nav.addItem(new AppNavItem("TreeGrid", TreeGridView.class, "la la-globe"));
 
         return nav;
     }
