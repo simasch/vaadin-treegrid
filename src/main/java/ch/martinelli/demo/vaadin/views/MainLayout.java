@@ -3,6 +3,9 @@ package ch.martinelli.demo.vaadin.views;
 
 import ch.martinelli.demo.vaadin.components.appnav.AppNav;
 import ch.martinelli.demo.vaadin.components.appnav.AppNavItem;
+import ch.martinelli.demo.vaadin.views.grid.GridView;
+import ch.martinelli.demo.vaadin.views.refresh.RefreshView;
+import ch.martinelli.demo.vaadin.views.split.SplitView;
 import ch.martinelli.demo.vaadin.views.treegrid.TreeGridView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.applayout.AppLayout;
@@ -56,6 +59,9 @@ public class MainLayout extends AppLayout {
         nav.addClassNames("app-nav");
 
         nav.addItem(new AppNavItem("TreeGrid", TreeGridView.class, "la la-globe"));
+        nav.addItem(new AppNavItem("Grid", GridView.class, "la la-globe"));
+        nav.addItem(new AppNavItem("Refresh", RefreshView.class, "la la-globe"));
+        nav.addItem(new AppNavItem("Split", SplitView.class, "la la-globe"));
 
         return nav;
     }
